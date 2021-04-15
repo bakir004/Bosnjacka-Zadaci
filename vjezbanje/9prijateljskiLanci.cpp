@@ -8,7 +8,6 @@
 using namespace std;
 
 int bfs(map<string, vector<string>> graph, string begin, string end) {
-    int counter = 0, numOfChildren;
     queue<string> q;
     map<string, bool> visited;
     // mapa level prati nivo bfs-a svakog nodea u grafu gdje je nivo prvog 1
@@ -34,7 +33,6 @@ int bfs(map<string, vector<string>> graph, string begin, string end) {
         }
 
         for (int i = 0; i < graph[currentPerson].size(); i++) {
-            numOfChildren = graph[currentPerson].size();
             if(!visited[graph[currentPerson][i]]) {
                 visited[graph[currentPerson][i]] = true;
                 q.push(graph[currentPerson][i]);
