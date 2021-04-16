@@ -24,18 +24,15 @@ int main() {
     startEndDiff.x = end.x - start.x;
     startEndDiff.y = end.y - start.y;
 
+    if(startEndDiff.x == 0 || startEndDiff.y == 0) {
+        cout << "0 1";
+        return 0;
+    }
+
     // ideja sa paralelnim svemirima, kako ih ja zovem
     while(true) {
         end.x += startEndDiff.x;
         end.y += startEndDiff.y;
-
-        if(startEndDiff.x == 0) {
-            bounces++;
-            break;
-        } else if (startEndDiff.y == 0) {
-            bounces++;
-            break;
-        }
 
         if(end.x > width) {
             flippedX = !flippedX;

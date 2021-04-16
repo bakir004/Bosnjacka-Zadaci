@@ -1,0 +1,7 @@
+https://algotree.org/algorithms/tree_graph_traversal/breadth_first_search/
+https://gist.github.com/douglas-vaz/5072998
+https://stackoverflow.com/questions/41789767/finding-the-shortest-path-nodes-with-breadth-first-search
+https://betterprogramming.pub/5-ways-to-find-the-shortest-path-in-a-graph-88cfefd0030f
+
+Da bi otvorili geogebra file u ovom folderu koristite: 
+https://www.math10.com/en/geometry/geogebra/fullscreen.html
