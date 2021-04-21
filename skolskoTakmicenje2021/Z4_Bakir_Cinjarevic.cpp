@@ -23,16 +23,19 @@ int solve(vector<vector<int>> matrix) {
             } else {
                 elementLeft = matrix[i][indexLeft];
             }
+
             if(indexTop < 0) {
                 elementTop = 0;
             } else {
                 elementTop = matrix[indexTop][j];
             }
+
             if(indexRight >= matrix[i].size()) {
                 elementRight = 0;
             } else {
                 elementRight = matrix[i][indexRight];
             }
+            
             if(indexBottom >= matrix.size()) {
                 elementBottom = 0;
             } else {
