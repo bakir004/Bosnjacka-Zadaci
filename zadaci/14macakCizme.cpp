@@ -68,7 +68,7 @@ int bfs(graphMap graph, int begin, int end, int cost, methodType method) {
 
     if(method == MEET_AND_GO) {
         if(pathLength == 0) {
-            meetingNode = closer == lesser ? ;
+            //meetingNode = closer == lesser ? 2 : 3;
             costUntilMet += closer;
         } else if(pathLength == 1) {
             meetingNode = path[0];
