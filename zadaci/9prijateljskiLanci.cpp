@@ -108,7 +108,7 @@ int main() {
     fstream file;
     
     // upisite svoj path :D
-    file.open("C:\\Users\\Zakir\\Desktop\\cpp stvari\\zadaci\\input.txt", ios::in);
+    file.open("C:\\Users\\Zakir\\Desktop\\cpp stvari\\zadaci\\prijatelji.txt", ios::in);
 
     if(!file.is_open()) {
         cout << "File error, could not open";

@@ -11,28 +11,28 @@ int main() {
     string str;
     vector<string> slova;
 
-    l = 4;
-    h = 5;
+    // l = 4;
+    // h = 5;
 
-    vector<string> slova(h, "");
+    // vector<string> slova(h, "");
 
-    slova[0] = " #  ##   ## ##  ### ###  ## # # ###  ## # # #   # # ###  #  ##   #  ##   ## ### # # # # # # # # # # ### ###";
-    slova[1] = "# # # # #   # # #   #   #   # #  #    # # # #   ### # # # # # # # # # # #    #  # # # # # # # # # #   #   #";
-    slova[2] = "### ##  #   # # ##  ##  # # ###  #    # ##  #   ### # # # # ##  # # ##   #   #  # # # # ###  #   #   #   ##";
-    slova[3] = "# # # # #   # # #   #   # # # #  #  # # # # #   # # # # # # #    ## # #   #  #  # # # # ### # #  #  #      ";
-    slova[4] = "# # ##   ## ##  ### #    ## # # ###  #  # # ### # # # #  #  #     # # # ##   #  ###  #  # # # #  #  ###  # ";
+    // slova[0] = " #  ##   ## ##  ### ###  ## # # ###  ## # # #   # # ###  #  ##   #  ##   ## ### # # # # # # # # # # ### ###";
+    // slova[1] = "# # # # #   # # #   #   #   # #  #    # # # #   ### # # # # # # # # # # #    #  # # # # # # # # # #   #   #";
+    // slova[2] = "### ##  #   # # ##  ##  # # ###  #    # ##  #   ### # # # # ##  # # ##   #   #  # # # # ###  #   #   #   ##";
+    // slova[3] = "# # # # #   # # #   #   # # # #  #  # # # # #   # # # # # # #    ## # #   #  #  # # # # ### # #  #  #      ";
+    // slova[4] = "# # ##   ## ##  ### #    ## # # ###  #  # # ### # # # #  #  #     # # # ##   #  ###  #  # # # #  #  ###  # ";
 
-    // cin >> l >> h;
-    // cin >> str;
+    cin >> l >> h;
+    cin >> str;
 
-    // string linijaSlova;
-    // for (int i = 0; i < h + 1; i++)
-    // {
-    //     getline(cin, linijaSlova);
-    //     slova.push_back(linijaSlova);
-    // }
-    // slova.erase(slova.begin());
-    // cout << "\n";
+    string linijaSlova;
+    for (int i = 0; i < h + 1; i++)
+    {
+        getline(cin, linijaSlova);
+        slova.push_back(linijaSlova);
+    }
+    slova.erase(slova.begin());
+    cout << "\n";
     
     vector<int> indeksiSlova;
     for (int i = 0; i < str.length(); i++)
