@@ -1,3 +1,6 @@
+// STATUS: zavrsen
+// IZVOR: BHOI
+
 #include <iostream>
 #include <vector>
 #include <string>

@@ -1,3 +1,6 @@
+// STATUS: zavrsen, rjesenje nije moje
+// IZVOR: KTSS-2016
+
 #include <iostream> 
 #include <cmath> 
 #include <algorithm> 

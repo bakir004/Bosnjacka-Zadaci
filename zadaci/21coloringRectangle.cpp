@@ -1,3 +1,6 @@
+// STATUS: nezavrsen
+// IZVOR: EJOI
+
 #include <iostream>
 #include <vector>
 

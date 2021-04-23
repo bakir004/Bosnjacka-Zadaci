@@ -1,3 +1,6 @@
+// STATUS: nezavrsen
+// IZVOR: BHOI
+
 #include <iostream>
 #include <vector>
 #include <set>
@@ -79,7 +82,7 @@ int main() {
             tempArray.pop_back();
         }
         reverse(tempVector.begin(), tempVector.end());
-        deque
+        // deque
         
         if(checkIfEqualDeque(originArray, dek)) {
             cout << "DA\n" << i;

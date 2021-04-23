@@ -1,3 +1,6 @@
+// STATUS: zavrsen
+// IZVOR: KTOS-2016
+
 #include <iostream>
 #include <vector>
 #include <cmath>

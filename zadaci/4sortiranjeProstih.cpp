@@ -1,13 +1,12 @@
+// STATUS: zavrsen
+// IZVOR: KTOS-2015
+
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include <algorithm>
 
 using namespace std;
-
-// Na ulazu se nalazi niz pozitivnih cijelih brojeva. Potrebno je:
-// razdvojiti proste od složenih brojeva, te ispisati najprije proste a zatim složene;
-// proste sortirati u opadajućem redoslijedu, a složene u rastućem.
 
 bool isPrime(int num){
     for (int i = 2; i < sqrt(num); i++)

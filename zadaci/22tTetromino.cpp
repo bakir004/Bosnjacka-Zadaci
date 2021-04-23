@@ -1,3 +1,6 @@
+// STATUS: zavrsen
+// IZVOR: EJOI
+
 #include <iostream>
 #include <algorithm>
 #include <vector>

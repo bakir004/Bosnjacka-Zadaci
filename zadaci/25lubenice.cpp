@@ -1,3 +1,6 @@
+// STATUS: nezavrsen
+// IZVOR: KTSS-2016
+
 #include <iostream>
 #include <vector>
 #include <set>

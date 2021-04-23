@@ -1,21 +1,9 @@
+// STATUS: zavrsen
+// IZVOR: KTOS-2015
+
 #include <iostream>
 
 using namespace std;
-
-// Ulazna poruka se sastoji od ASCII karaktera gdje je svaki karakter predstavljen sa 7 bita.
-// Izlazna kodirana poruka se sastoji od blokova nula.
-// Blokovi se razdvajaju pomoću praznog mjesta.
-// Dva susjedna bloka se koriste za predstavljanje serije bita koji imaju istu vrijednost (serija 
-// jedinica ili serija nula):
-// Prvi blok: je uvijek 0 ili 00. Ako je 0, onda serija sadrži samo jedinice, a ako je 00, onda 
-// serija sadrži samo nule.
-// Drugi blok: sadrži onoliko nula koliko se u seriji koju kodiramo nalazi jedinica ili nula.
-// Na primjer, ako Chuck Norris želi poslati prvo slovo svog imena “C”, čija je binarna reprezentacija 
-// 1000011, onda će se upotrebom ove tehnike dobiti:
-//   0 0 (prva serija sadrži jednu jedinicu),
-//   00 0000 (druga serija sadrži četiri nule),
-//   0 00 (treća serija sadrži dvije jedinice).
-// To znači da će Chuck Norris poslati 0 0 00 0000 0 00.
 
 void reverseString(string &str) {
     for (int i = 0; i < str.length() / 2; i++)

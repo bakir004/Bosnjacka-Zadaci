@@ -1,3 +1,6 @@
+// STATUS: zavrsen
+// IZVOR: KTSS-2015
+
 #include <iostream>
 #include <fstream>
 #include <vector>

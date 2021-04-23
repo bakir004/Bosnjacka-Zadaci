@@ -1,21 +1,12 @@
+// STATUS: nezavrsen
+// IZVOR: KTOS-2016
+
 #include <iostream>
 #include <vector>
 #include <cmath>
 #include <algorithm>
 
 using namespace std;
-
-// Dat je neki niz prirodnih brojeva. Ako na svaki član tog niza primijenimo operaciju binarni XOR 
-// (ekskluzivna disjunkcija) sa nekim prirodnim brojem X dobićemo neki drugi niz prirodnih 
-// brojeva.
-// Recimo da niz glasi 4 2 3 1. Ako je X=6 dobićemo niz 2 4 5 6.
-// Vaš zadatak je da napravite program koji za uneseni niz provjerava da li postoji X takvu da se 
-// nakon primjene XOR dobije niz koji je sortiran u rastućem poretku (ali ne strogo rastućem, 
-// dakle dozvoljeno je da dva susjedna člana budu jednaka). U prethodnom primjeru za niz 4 2 3 
-// 1 postoji takvo X i ono iznosi 6.
-
-// pretpostavljam da brojevi u binarnom prikazu imaju isti broj bitova kao u primjeru,
-// i da X mora imati broj bitova <= broju bitova u brojevima u nizu
 
 void reverseString(string &str) {
     for (int i = 0; i < str.length() / 2; i++){

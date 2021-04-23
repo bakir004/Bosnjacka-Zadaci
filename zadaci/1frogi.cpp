@@ -1,3 +1,6 @@
+// STATUS: zavrsen
+// IZVOR: KTOS-2015
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -9,11 +12,11 @@ struct Lokvanj {
     bool visited;
 
     Lokvanj(float x, float y, float r, float broj, bool visited){
-        this->x = x;
-        this->y = y;
-        this->r = r;
-        this->broj = broj;
-        this->visited = visited;
+        x = x;
+        y = y;
+        r = r;
+        broj = broj;
+        visited = visited;
     }
 };
 

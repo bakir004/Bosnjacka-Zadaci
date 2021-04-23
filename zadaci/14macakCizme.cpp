@@ -1,3 +1,6 @@
+// STATUS: nezavrsen
+// IZVOR: BHOI
+
 #include <iostream>
 #include <vector>
 #include <queue>

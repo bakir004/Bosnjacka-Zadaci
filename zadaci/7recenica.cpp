@@ -1,21 +1,10 @@
+// STATUS: zavrsen
+// IZVOR: KTOS-2016
+
 #include <iostream>
 #include <vector>
 
 using namespace std;
-
-// Na ulazu programa se nalazi neka rečenica dužine najviše 2000 karaktera. Vaš zadatak je da 
-// ispišete na ekran unesenu rečenicu transformisanu na sljedeći način:
-//  Malo početno slovo svake riječi treba zamijeniti odgovarajućim velikim slovom.
-//  Riječ u kojoj se pojavljuje najveći broj velikih ili malih slova A treba zamijeniti riječju 
-// OVDJE. Ako se u čitavoj rečenici ne pojavljuje niti jedno slovo A, ne treba raditi 
-// zamjenu. Ako se pojavljuje nekoliko riječi sa istim (najvećim) brojem slova A treba 
-// zamijeniti prvu takvu riječ gledano s lijeva.
-//  Svaka riječ duža od devet slova zamijenjena je sa prva tri slova i znakom tačka (npr. 
-// riječ "skracenica" treba ispisati kao "skr.")
-// Pretpostavlja se da je riječ neki niz znakova koji je sa obje strane omeđen znakom razmaka, 
-// početkom ili krajem stringa. Ne trebate provjeravati da li se riječi sastoje iz slova ili sadrže i 
-// neke znakove interpunkcije, trebate jednostavno pretpostaviti da su svi znakovi slova, a 
-// znakove interpunkcije računati u riječ
 
 void capitalizeWords(string &sentence) {
     if((int)sentence[0] >= 97 && (int)sentence[0] <= 122) {

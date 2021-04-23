@@ -1,3 +1,6 @@
+// STATUS: zavrsen
+// IZVOR: KTOS-2015
+
 #include <iostream>
 #include <vector>
 
