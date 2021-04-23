@@ -76,9 +76,11 @@ graphType makeGraph(vector<vector<char>> matrix) {
 int dijkstra(graphType graph, int endNode) {
     priority_queue<pair<int, int>> q;
     vector<int> distance;
+
     for (int i = 0; i <= graph.size(); i++) {
         distance.push_back(INT_MAX);
     }
+    
     q.push(make_pair(distance[0], 1));
     distance[1] = 0;
     while(!q.empty()) {
