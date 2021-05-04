@@ -65,6 +65,7 @@ int main() {
             // if(importantIndexes[indexOfCurrentImportantIndex + 1] > importantIndexes[indexOfCurrentImportantIndex]) {
             //     break;
             // }
+            
             if(indexOfNextLetterOfCurrentType != -1)
                 importantIndexes[indexOfCurrentImportantIndex] = indexOfNextLetterOfCurrentType;
             else
