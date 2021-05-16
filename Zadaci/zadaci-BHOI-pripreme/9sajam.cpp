@@ -2,15 +2,39 @@
 #include <vector>
 #include <algorithm>
 #include <fstream>
+#include <map>
+#include <deque>
 
 using namespace std;
 
 int countUnique(vector<int> nums) {
-    int sum = 0;
+    map<int, int> numbers;
+    vector<int> res;
+
+    int left = 0, right = 0;
+    deque<int> temp;
+    while(left != nums.size() && right != nums.size()) {
+        temp.push_back(nums[right]);
+        numbers[nums[right]]++;
+        bool flag = true;
+        for(auto field : numbers) {
+            if(field.second <= 0) {
+                flag = false;
+            }
+        }
+        if(flag) {
+            res.push_back(temp.size());
+            left++;
+            temp.pop_front();
+        } else {
+            right++;
+        }
+    }
+    
 
     
 
-    return sum;
+    return *max_element(res.begin(), res.end());
 }
 
 int main() {
