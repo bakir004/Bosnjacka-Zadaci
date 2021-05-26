@@ -22,8 +22,6 @@ struct Connection {
 vector<vector<int>> makeGraph(vector<Connection> connections, int N) {
     vector<vector<int>> graph(N + 1, vector<int>());
     for (int i = 0; i < connections.size(); i++) {
-        int a = connections[i].from;
-        int b = connections[i].to;
         graph[connections[i].from].push_back(connections[i].to);
         graph[connections[i].to].push_back(connections[i].from);
     }
